@@ -16,27 +16,26 @@
 </head>
 
 <body id="doc">
-    <div>
-        <header>
-            <div class="nav-desktop">
-                <span class="material-symbols-rounded"
-                    onclick="document.getElementById('doc').classList.toggle('dark'); document.getElementById('sub').classList.toggle('btn-info')">
-                    dark_mode
-                </span>
-            </div>
-        </header>
-        <br>
+    <header>
+        <div class="nav-desktop">
+            <span class="material-symbols-rounded"
+                onclick="document.getElementById('doc').classList.toggle('dark'); document.getElementById('sub').classList.toggle('btn-info')">
+                dark_mode
+            </span>
+        </div>
+    </header>
+    <br>
 
-        QuickCalc
+    QuickCalc
 
-        <br><br>
+    <br><br>
 
-        <form action="/" method="post">
-            <input spellcheck="false" type="text" class="form" name="lhs" placeholder="1 + x">
-            <button type="submit" id="sub" class="btn btn-info">=</button>
-            <input spellcheck="false" type="text" name="rhs" placeholder="2" class="form">
-        </form>
-        <h1>{{ solution }}</h1>
+    <form action="/" method="post">
+        <input spellcheck="false" type="text" class="form" name="lhs" placeholder="1 + x">
+        <button type="submit" id="sub" class="btn btn-info">=</button>
+        <input spellcheck="false" type="text" name="rhs" placeholder="2" class="form">
+    </form>
+    <h1>{{ solution }}</h1>
 </body>
 
 </html>
