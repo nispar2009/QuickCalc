@@ -1,9 +1,8 @@
 def solve(lhs, rhs, var):
     try:
         counter = 0
-        solved = False
 
-        while not solved:
+        while True:
             lhs2 = ''
             rhs2 = ''
 
@@ -17,7 +16,7 @@ def solve(lhs, rhs, var):
                 elif letter == '^': rhs2 += '**'
                 else: rhs2 += letter
 
-            if eval(lhs2) == eval(rhs2): solved = True; return counter
+            if eval(lhs2) == eval(rhs2): return counter
             counter += 1
 
     except:
